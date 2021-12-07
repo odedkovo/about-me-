@@ -803,7 +803,10 @@ fieldset[disabled] .btn-xl:hover {
 .bg-light img {
   height: 40vh;
 }
-
+.team-member img {
+  /* width: 30%; */
+  height: 100%;
+}
 input {
   margin-left: 20%;
   margin-top: 20px;
