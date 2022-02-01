@@ -38,8 +38,7 @@ function renderPage() {
 
 function renderModal() {
   const projectId = $(this).closest('.portfolio-item').data().id;
-  // console.log(projectId);
-  // console.log('hi');
+
   var proj = getProjById(projectId);
   var strHTMLs = ` <div
       class="portfolio-modal modal fade"
@@ -73,7 +72,7 @@ function renderModal() {
                   <ul class="list-inline">
                     <li>Date: ${proj.publishedAt}</li>
                     <li>Category${proj.lables}</li>
-                    <li><a href="https://odedkovo.github.io/${proj.name}/">for the project </a></li>
+                    <li><a href="${proj.link}">for the project </a></li>
                   </ul>
                   <button
                     class="btn btn-primary"

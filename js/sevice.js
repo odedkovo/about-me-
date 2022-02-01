@@ -3,44 +3,40 @@ var gCounter = 1;
 
 var gProj = [
   createProj(
-    'library1',
-    'the library project',
-    ' A small project that show an online library you can upload,read,delete and update the books in the library.',
-    'url',
-    'Denember 21',
-    ' coding basic'
-  ),
-  createProj(
-    'jini',
-    'jini',
-    'a small jini that can guess whoever you think about ..if he didnt guess you can add the character you thought about and he will learn fron time to time',
-    'url',
-    'Denember 21',
-    ' basic game'
-  ),
-  createProj(
-    'mines-sweeper',
-    'mines sweeper',
-    'my first project! mines sweeper with endless levels. if you lose all your lifes than you have to start from the first level (3X3) hint and timer inside.',
-    ' url',
-    'Denember 21',
-    ' basic game'
-  ),
-  createProj(
     'designProject',
     'Design Website Project',
     ' a design practice.ive got a photo of this page and asked to program this page.to do exactly the same px perfect',
     ' url',
     'Denember 21',
-    '  basic design'
+    '  basic design',
+    'https://odedkovo.github.io/designProject/'
   ),
   createProj(
-    'usersAdmin',
-    'Users Admins Project',
-    'the first local storage project.a simple website.if you are registerd you can get inside by username and password and if you are an admin you can get inside the admin page try the users name : oded,galia and the passwords: 7644,1234',
+    'Meme generator',
+    'Build website',
+    'In this project u used canvas and some more technologies to build the meme generator. in this app you can edit funny imgs!',
     ' url',
-    'Denember 21',
-    ' basic users site'
+    'Januar 22',
+    'Building an app ',
+    'https://odedkovo.github.io/memeGenerator/'
+  ),
+  createProj(
+    'Apsus',
+    'Build website in React ',
+    'In this project ive build an app using react in the first time ! this was aPairing exercise i was incharge of the note app.',
+    ' url',
+    'Januar 22',
+    'Building a React  app ',
+    'https://nadavinbar8.github.io/Appsus/#/keep'
+  ),
+  createProj(
+    'Taskflow',
+    'Build end to end application ',
+    'In this project ive build an end to end  app using React ,Redux, React hooks,Nongo db Heroku Sass and more ...  this was a project that practicing team work and has built in two weeks by me and by another two co workers',
+    ' url',
+    'Januar 22',
+    'Building a React  app ',
+    'https://taskflow-nadav-tom-oded.herokuapp.com/'
   ),
 ];
 
@@ -48,7 +44,7 @@ function getGproj() {
   return gProj;
 }
 
-function createProj(username, title, dec, url, publishedAt, lables) {
+function createProj(username, title, dec, url, publishedAt, lables, link) {
   return {
     id: makeId(),
     name: username,
@@ -58,6 +54,7 @@ function createProj(username, title, dec, url, publishedAt, lables) {
     publishedAt: publishedAt,
     lables: lables,
     countId: gCounter++,
+    link: link,
   };
 }
 
