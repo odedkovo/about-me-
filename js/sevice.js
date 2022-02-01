@@ -12,7 +12,7 @@ var gProj = [
     'https://odedkovo.github.io/designProject/'
   ),
   createProj(
-    'Meme generator',
+    'MemeGenerator',
     'Build website',
     'In this project u used canvas and some more technologies to build the meme generator. in this app you can edit funny imgs!',
     ' url',
