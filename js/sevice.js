@@ -44,10 +44,10 @@ function getGproj() {
   return gProj;
 }
 
-function createProj(username, title, dec, url, publishedAt, lables, link) {
+function createProj(projName, title, dec, url, publishedAt, lables, link) {
   return {
     id: makeId(),
-    name: username,
+    name: projName,
     title: title,
     desc: dec,
     url: url,
