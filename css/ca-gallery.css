@@ -636,7 +636,7 @@ footer ul.quicklinks {
   text-transform: uppercase;
 }
 ul.social-buttons {
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
 ul.social-buttons li a {
   font-size: 20px;
